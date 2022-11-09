@@ -1,0 +1,8 @@
+[book]
+title = "Rust 编程语言"
+authors = ["Steve Klabnik", "Carol Nichols", "来自 Rust 社区的贡献"]
+
+[output.html]
+additional-css = ["ferris.css", "theme/2018-edition.css"]
+additional-js = ["ferris.js"]
+git-repository-url = "https://github.com/kLiHz/the-rust-book"
