@@ -10,9 +10,9 @@
 
 [^dead-tree-form]: 原文为 "dead-tree form", 实际意义即为 "纸本形式".
 
-你也可以通过在线方式免费阅读此书. 建议阅读伴随最新的 [stable],
-[beta], 或者 [nightly] 通道的 Rust 发行版所提供的该书.
-注意介于这些发行本的更新频率较低, 其中的问题可能已经在 [原仓库][the-book-repo] 中修复.
+你也可以通过在线方式免费阅读此书. 建议阅读伴随 [stable],
+[beta], 或者 [nightly] 通道的最新 Rust 发行版提供的本书 (英文版).
+请注意, 介于这些发行版的更新频率较低, 其中的问题可能已经在 [原仓库][the-book-repo] 中修复.
 
 [the-book-repo]: https://github.com/rust-lang/book
 
@@ -20,7 +20,7 @@
 [beta]: https://doc.rust-lang.org/beta/book/
 [nightly]: https://doc.rust-lang.org/nightly/book/
 
-参见原仓库的 [releases] 部分以下载书中出现的代码示例.
+参见原仓库的 [releases] 以下载书中出现的示例代码.
 
 [releases]: https://github.com/rust-lang/book/releases
 
