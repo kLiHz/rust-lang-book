@@ -27,6 +27,8 @@
 
 本翻译托管在 [github.com/kLiHz/the-rust-book][this-translation].
 
+本翻译所基于的原文状态为该仓库中 `main` 分支所对应的原仓库的 commit 提交.
+
 翻译时半角符号优先, 个人喜好优先.
 
 [this-translation]: https://github.com/kLiHz/the-rust-book

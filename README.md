@@ -2,9 +2,11 @@
 
 本仓库存放个人翻译的 "Rust 编程语言" 一书.
 
+本翻译所基于的原文状态为该仓库中 `main` 分支所对应的原仓库的 commit 提交.
+
 请参见原仓库: [github.com/rust-lang/book][the-book-repo].
 
-此书的英文原版也以 "死树形式"[^dead-tree-form] 经由 [No Starch 出版社提供][nostarch].
+此书的英文原版也以 "死树形式" [^dead-tree-form] 经由 [No Starch 出版社提供][nostarch].
 
 [nostarch]: https://nostarch.com/rust
 
