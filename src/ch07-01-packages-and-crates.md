@@ -10,30 +10,30 @@ Crate 中可以包含若干模块, 而这些模块可以被定义在其它文件
 
 一个 crate 可以以两种形式出现: 一个二进制 crate (binary crate) 或者一个库 crate
 (library crate). *二进制 crate* 是能被您编译为可执行文件的程序, 比如命令行界面程序
-(command-line program) 或者服务器程序. 每个这样的程序必须具有一个叫做 `main`
-的函数, 其决定该可执行文件运行时发生的事情. 到目前为止, 我们创建的所有 crate
+(command-line program) 或者服务器程序. 每个程序必须具有一个叫做 `main`
+的函数, 定义该可执行文件运行时发生的事情. 目前为止, 我们创建的所有 crate
 均为二进制 crate.
 
 *库 crates* 中没有 `main` 函数, 它们也不能被编译为可执行程序. 取而代之地,
-它们中会定义一些将会被共享于若干个项目之间的功能. 例如, 我们在
+它们定义了一些意在共享于若干项目之间的功能. 例如, 我们在
 [第二章][rand]<!-- ignore --> 中用到的名为 `rand` 的 crate 就提供了生成随机数的功能.
 当 Rust 使用者说到 "crate" 时, 多数时候指的是库 crate; 他们口中的 "crate"
 和编程语言中普遍具备的 "库" 的概念是可以互换的.
 
-*crate root* (crate 根) 是一个源文件, Rust 编译器从它开始并构造出您 crate
+*Crate 根* (crate root) 是一个源文件, Rust 编译器将从它开始并构造出您 crate
 的根模块 (我们将在 ["通过定义模块来控制作用域和私有性"][modules]<!-- ignore -->
-一节中详细讲解各模块).
+一节中详细讲解模块).
 
 包 (package) 是提供一系列功能的一个或多个 crate 的集合. 每个包中包含一个
-*Cargo.toml* 文件, 用来描述如何构建出这些 crate.
-Cargo 本身就是一个包含着您一直以来用以构建代码的命令行工具的二进制 crate 的包.
-Cargo 包里面同时也包含着该二进制 crate 所依赖的库 crate. 其他项目也可以选择依赖
+*Cargo.toml* 文件, 用来描述如何构建出这些 crate. 其实, Cargo 就是一个包,
+其中包含您一直以来用以构建代码的命令行工具的二进制 crate.
+Cargo 包同时也包含着该二进制 crate 所依赖的库 crate. 其他项目也可以选择依赖
 Cargo 的库 crate 以使用和 Cargo 命令行工具同样的逻辑.
 
 一个包中可以包含任意多个二进制 crate, 但是至多只能包含一个库 crate.
-一个包必须包含至少一个 crate, 无论是库 crate 还是二进制 crate.
+一个包必须包含至少一个 crate, 可以是库 crate, 也可以是二进制 crate.
 
-让我们看看当我们新建一个包时发生了什么. 首先, 我们输入 `cargo new` 命令:
+下面我们详细看一下新建一个包时会发生什么. 首先, 我们输入 `cargo new` 命令:
 
 ```console
 $ cargo new my-project
