@@ -20,7 +20,7 @@ Crate 中可以包含若干模块, 而这些模块可以被定义在其它文件
 当 Rust 使用者说到 "crate" 时, 多数时候指的是库 crate; 他们口中的 "crate"
 和编程语言中普遍具备的 "库" 的概念是可以互换的.
 
-*Crate 根* (crate root) 是一个源文件, Rust 编译器将从它开始并构造出您 crate
+*Crate 根* (*crate root*) 是一个源文件, Rust 编译器将从它开始并构造出您 crate
 的根模块 (我们将在 ["通过定义模块来控制作用域和私有性"][modules]<!-- ignore -->
 一节中详细讲解模块).
 
