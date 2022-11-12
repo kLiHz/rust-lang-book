@@ -21,9 +21,9 @@
   - 行间 (inline): 紧随 `mod garden` 后面, 将分号替换为花括号后, 括号之间的代码
   - 在文件 *src/garden.rs* 中
   - 在文件 *src/garden/mod.rs* 中
-- **子模块的声明**: 您可以在除 crate root 之外的任何文件中声明子模块. 比如,
+- **次级模块的声明**: 您可以在除 crate root 之外的任何文件中声明次级模块. 比如,
   您可能会在 *src/garden.rs* 中声明 `mod vegetables;`.
-  至于子模块的代码, 编译器将会在上级模块名所指明的目录下的这些地方寻找:
+  至于次级模块的代码, 编译器将会在上级模块名所指明的目录下的这些地方寻找:
   - 行间 (inline): 紧随 `mod vegetables` 其后, 在花括号中间 (而不是分号)
   - 在文件 *src/garden/vegetables.rs* 中
   - 在文件 *src/garden/vegetables/mod.rs* 中
