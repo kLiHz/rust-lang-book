@@ -95,7 +95,7 @@ backyard
 
 要将我们 crate 的结构设计成这种样子, 我们可以将这些功能函数安排进嵌套的模块里.
 首先运行 `cargo new restaurant --lib` 命令新建一个名为 `restaurant` 的库;
-然后将代码清单 7-1 中的内容输入进 *src/lib.rs*, 来定义一些模块和函数签名.
+然后将清单 7-1 中的内容输入进 *src/lib.rs*, 来定义一些模块和函数签名.
 前台部分的内容如下:
 
 <span class="filename">文件名: src/lib.rs</span>
@@ -104,13 +104,13 @@ backyard
 {{#rustdoc_include ../listings/ch07-managing-growing-projects/listing-07-01/src/lib.rs}}
 ```
 
-<span class="caption">代码清单 7-1: 一个名为 `front_of_house` 的模块,
+<span class="caption">清单 7-1: 一个名为 `front_of_house` 的模块,
 其中包含其它一些模块, 函数则包含在这些模块中</span>
 
 我们用 `mod` 关键字和跟在它后面的模块名 (本例中为 `front_of_house`) 定义了一个模块.
 然后将模块的主体写在了花括号之间. 我们可以在模块中放置其它模块, 至于本例中, 我们放进了
 `hosting` 和 `serving` 这两个模块. 模块中也能存放其它项的声明, 比如结构体, 枚举,
-常量, 特征, 以及 — 如代码清单 7-1 中所示 — 函数.
+常量, 特征, 以及 — 如清单 7-1 中所示 — 函数.
 
 通过使用模块, 我们将相互具有关联的定义集合在一起, 并通过命名来说明它们之间是何种联系.
 使用这些代码的程序员不用阅读所有定义, 而是基于分组情况, 就能对代码进行定位,
@@ -121,7 +121,7 @@ backyard
 它们之所以叫这个名字, 是因为两个文件中各自的内容, 都会形成一个名为 `crate` 的模块,
 作为对应 crate 的模块结构的根 (root), 该模块结构也被称作 *模块树* (*module tree*).
 
-代码清单 7-2 展示了代码清单 7-1 中代码结构对应的模块树.
+清单 7-2 展示了清单 7-1 中代码结构对应的模块树.
 
 ```text
 crate
@@ -135,7 +135,7 @@ crate
          └── take_payment
 ```
 
-<span class="caption">代码清单 7-2: 代码清单 7-1 中代码所对应的模块树. </span>
+<span class="caption">清单 7-2: 清单 7-1 中代码所对应的模块树. </span>
 
 这棵树展示了各模块是如何嵌套在彼此之间的; 举个例子, `hosting` 就是嵌套在
 `front_of_house` 之中. 该树还说明了有些模块彼此之间是 *同级模块* (*siblings*),
