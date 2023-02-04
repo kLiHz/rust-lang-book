@@ -16,7 +16,7 @@
 
 [install]: ch01-01-installation.html
 [editions]: appendix-05-editions.html
-[nsprust]: https://nostarch.com/rust
+[nsprust]: https://nostarch.com/rust-programming-language-2nd-edition
 [translations]: appendix-06-translation.html
 
 > **🚨 想要一种交互性更强的学习体验吗? 来试试这本不一样的 "Rust 编程语言",

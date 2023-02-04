@@ -8,7 +8,7 @@
 
 此书的英文原版也以 "死树形式" [^dead-tree-form] 经由 [No Starch 出版社提供][nostarch].
 
-[nostarch]: https://nostarch.com/rust
+[nostarch]: https://nostarch.com/rust-programming-language-2nd-edition
 
 [^dead-tree-form]: 原文为 "dead-tree form", 实际意义即为 "纸本形式".
 
@@ -35,7 +35,7 @@
 [rust-mdbook]: https://github.com/rust-lang/rust/blob/master/src/tools/rustbook/Cargo.toml
 
 ```bash
-$ cargo install mdbook --vers [version-num]
+$ cargo install mdbook --version <version_num>
 ```
 
 ## 构建
